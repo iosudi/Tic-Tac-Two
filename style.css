@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Patua+One&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+
+body {
+  background: #322653;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 5rem;
+  font-size: 4rem;
+  color: #ffd2d7;
+  font-family: "Patua One";
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 20px #9288f8;
+}
+
+.wrapper {
+  border-radius: 5px;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.cell {
+  display: inline-block;
+  border: 1px solid #ffd2d7;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 0;
+}
+
+span {
+  position: absolute;
+  font-size: 140px;
+  font-family: sans-serif;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  padding: 0;
+  margin: 5px;
+  margin-left: -75px;
+  margin-top: -10px;
+  cursor: default;
+  color: #ffd2d7;
+}
+
+#b1,
+#b4,
+#b7 {
+  border-left: none;
+}
+
+#b1,
+#b2,
+#b3 {
+  border-top: none;
+}
+
+#b3,
+#b6,
+#b9 {
+  border-right: none;
+}
+
+#b7,
+#b8,
+#b9 {
+  border-bottom: none;
+}
+
+.alert {
+  height: 75px;
+  width: 125px;
+  display: inline-block;
+  background: ghostwhite;
+  position: relative;
+  z-index: 10;
+  margin-top: -50%;
+  border-radius: 20px;
+  box-shadow: 0 0 75px 2px dimgray;
+  animation: larger 0.5s;
+  animation-fill-mode: forwards;
+  box-sizing: content-box;
+  padding: 30px;
+  bottom: 20px 50px;
+  top: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+button {
+  background: dimgray;
+  border-radius: 2px;
+  color: ghostwhite;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:focus {
+  background: silver;
+}
+
+.activeBox {
+  background: #9288F8;
+}
+
+@keyframes larger {
+  from {
+    height: 75px;
+    width: 125px;
+  }
+
+  to {
+    height: 100px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 833px) {
+  h1 {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+
+  .cell {
+    width: 120px;
+    height: 120px;
+  }
+
+  span {
+    font-size: 110px;
+  }
+
+  .alert {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 397px) {
+  h1 {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+
+  .cell {
+    width: 95px;
+    height: 95px;
+  }
+
+  span {
+    font-size: 90px;
+  }
+
+  .alert {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 343px) {
+  body {
+    width: 100%;
+  }
+  h1 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+  }
+
+  .cell {
+    width: 85px;
+    height: 85px;
+  }
+
+  span {
+    font-size: 80px;
+  }
+
+  .alert {
+    padding: 20px;
+  }
+}
